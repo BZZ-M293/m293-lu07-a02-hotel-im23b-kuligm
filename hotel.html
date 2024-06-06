@@ -8,7 +8,24 @@
 <body>
 
 <h1>Hotelzimmer-Buchungssystem</h1>
+<form action>
+  <label>Zimmertyp:
+    <select name="Zimmertyp" size="4" id="zimmertyp" multiple>
+        <option>Einzelzimmer</option>
+        <option>Doppelzimmer</option>
+        <option>Familienzimmer</option>
+        <option>Suite</option>
+    </select>
+  </label>
 
+  <input type="checkbox" name="zusatzleistungen[]" value="Frühstück" id="checkbox1">
+  <label for="checkbox1"> Frühstück</label>
+  <input type="checkbox" name="zusatzleistungen[]" value="Flughafentransfer" id="checkbox2">
+  <label for="checkbox2">Flughafentransfer</label>
+  <input type="checkbox" name="zusatzleistungen[]" value="Spa-Zugang" id="checkbox3">
+  <label for="checkbox3">Spa-Zugang</label>
+
+</form>
 
 </body>
 </html>
